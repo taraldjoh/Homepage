@@ -9,6 +9,8 @@ body {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #a1a8a7;
+    max-width: 100%;
+    height: auto;
     
 }
 
@@ -26,9 +28,11 @@ body {
 /* Section Styles */
 .portrait {
     border: solid #a7a6a6 5px;
-    margin: 40px;
+    margin: 40px auto;
     border-radius: 50%;
     padding: 1px;
+    max-width: 100%;
+    height: auto;
 }
 
 .nav-bar {
@@ -38,6 +42,7 @@ body {
     padding: 0;
     position: fixed;
     text-align: center;
+    border-bottom: #1a1d1c;
 }
 
 .nav {
@@ -56,13 +61,15 @@ body {
 }
 
 header {
-    background:linear-gradient(to right, #1a1d1c, #323635);
+    background:linear-gradient(to right, #1a1d1c,#4d5352, #1a1d1c);
     margin: 0 auto;
     padding: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
-h1 {
-    font-size: 50px;
+.header h1 {
+    font-size: 50px auto;
     color: white;
     border-bottom: 2px solid white;
     border-color: 078aba;
@@ -70,12 +77,21 @@ h1 {
     text-align: center;
     display: block;
     width: 400px;
+    max-width: 100%;
+    height: auto;
 }
 
-h2 {
+.header h2 {
     font-size: 20px;
     color: #90ee02;
     margin: 5px;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #90ee02;
+    margin: 5px;
+    border-bottom: 2px solid white;
 }
 
 p {
@@ -86,7 +102,7 @@ p {
 }
 
 .card {
-    margin: 30px;
+    margin: 30px auto;
     padding: 20px 40px 40px;
     max-width: 500px;
     text-align: left;
@@ -97,7 +113,37 @@ p {
 
   .card:hover {
     border-color: #90ee02; 
-  }    
+    transition: all 1s;
+}    
+
+.goals {
+    color: white;
+    font-weight: 600;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10;
+    overflow: hidden;
+    background:linear-gradient(to right, #1a1d1c, #323635);
+    border-radius: 6px;
+    text-align: center;
+}
+
+.goals li {
+    float: left;
+}
+
+.goals a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: white;   
+}
+
+.goals a:hover {
+    color: #90ee02;
+    transition: all 1s;
+}
+
 
 
 /* Styles for larger screens */
@@ -117,6 +163,3 @@ header {
   max-width: 1200px;
 }
 
-.goals {
-    color: white;
-}
